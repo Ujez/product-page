@@ -26,6 +26,7 @@ nav {
 }
 .nav-links {
     justify-content: space-around;
+    list-style-type: none;
 
 }
 .nav-link {
