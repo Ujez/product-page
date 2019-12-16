@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'poppins', sans-serif ;
+}
+header {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+.logo-container, .nav-links, .cart {
+    display: flex;
+} 
+.logo-container {
+    flex: 1;
+}
+.logo {
+    font-weight: 400;
+    margin: 5px;
+}
+nav {
+    flex: 2;
+}
+.nav-links {
+    justify-content: space-around;
+}
+.cart {
+    flex: 3;
+}
