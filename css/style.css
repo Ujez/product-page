@@ -21,11 +21,17 @@ header {
     font-weight: 400;
     margin: 5px;
 }
-nav {
+nav { 
     flex: 2;
 }
 .nav-links {
     justify-content: space-around;
+
+}
+.nav-link {
+    color: #5f5f79;
+    font-size: 18px;
+    text-decoration: none;
 }
 .cart {
     flex: 3;
