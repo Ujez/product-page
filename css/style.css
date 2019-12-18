@@ -5,6 +5,8 @@
 }
 body {
     font-family: 'Poppins', sans-serif ;
+    background-image: url("./ramiro-mendes-CjS3QsRuxnE-unsplash.jpg");
+    background-size: cover;
 }
 button {
     font-family: 'Poppins', sans-serif ;
@@ -89,7 +91,74 @@ nav {
     margin: 30px 0px 0px 30px;
 
 }
-.cover img {
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     height: 60vh;
-    filter: drop-shadow(0px 5px 3px black);
+}
+.cover img {
+    height: 100%;    
+    animation: drop 1.5s ease;
+}
+.bgw {
+    position: absolute;
+
+}
+.watch-select {
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 20%;
+}
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform:  translateY(0px);
+    }
+}
+@media screen and (max-width: 1024px){
+    .presentation {
+        flex-direction: column; 
+    }
+    .intro {
+        margin-top: 5vh ;
+        text-align: center;
+    }
+    .intro-text h1{
+        font-size: 30px;
+    }
+    .intro-text p{
+        font-size: 14px;
+    }
+    .cta{
+        padding: 10px 0px 0px 0px;
+    }
+    .navlink{
+        font-size: 14px;
+    }
+    .watch-select {
+        bottom: 5%;
+        right: 50%;
+        width: 50%;
+        transform: translate(50%, 5%);
+    }
+    .cover img {
+        height: 80%;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .cta-cart, .cta-buy {
+        width: 150px;
+        height: 50px;
+        cursor: pointer;
+        font-size:12px;
+    
+    }
 }
